@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:id="@+id/repoName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="5dp"
+        android:text="repoName"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+    <TextView
+        android:id="@+id/repoDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/repoName"
+        android:text="repoDesc"/>
+
+
+    <ImageView
+        android:id="@+id/ownerAvatar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/repoDesc"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/ownerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ownerAvatar"
+        android:layout_below="@+id/repoDesc"
+        android:text="owneName"/>
+
+
+    <TextView
+        android:id="@+id/numberOfStars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/repoDesc"
+        android:layout_alignParentRight="true"
+        android:text="numberOfStars"/>
+
+    <ImageView
+        android:id="@+id/starIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/numberOfStars"
+        android:layout_marginRight="2dp"
+        android:src="@drawable/star"
+        android:layout_below="@+id/repoDesc"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/ownerAvatar"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary" />
+
+
+
+
+
+</RelativeLayout>
