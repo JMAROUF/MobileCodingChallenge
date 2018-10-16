@@ -24,14 +24,14 @@
 ### Run the project 
   To run this project floow these steps :
    - Open **Android Studio**
-   - Go to File/open/(go project location )
+   - Go to File/open/(go to  project location )
    - select the project & click OK
    - wait for the compilation and click the green triangle on the top of window 
    - choose an emulator or connect your device to the computer 
    - select the emulator/device and click OK  
    
 ### Deployment
-  To deploy this project you should generate an **APK** , to do this go the **buid**/generate Signed APK** and follow the steps using this link : 
+  To deploy this project you should generate an **APK** , to do this go the **buid**/generate **Signed APK** and follow the steps using this link : 
   [**GENERATE SIGNED APK**](https://abhiandroid.com/androidstudio/generate-signed-apk-android-studio.html)
   
    
