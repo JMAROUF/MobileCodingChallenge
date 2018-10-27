@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MobileCodinChallengeJMAROUF</string>
+    <string name="repoName">repo name</string>
+    <string name="nStars">number of stars desc</string>
+    <string name="ownerName">owner Name</string>
+
 </resources>

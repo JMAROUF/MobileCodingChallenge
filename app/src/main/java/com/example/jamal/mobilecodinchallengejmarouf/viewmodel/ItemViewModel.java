@@ -1,10 +1,14 @@
-package com.example.jamal.mobilecodinchallengejmarouf;
+package com.example.jamal.mobilecodinchallengejmarouf.viewmodel;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.ViewModel;
 import android.arch.paging.LivePagedListBuilder;
 import android.arch.paging.PageKeyedDataSource;
 import android.arch.paging.PagedList;
+
+import com.example.jamal.mobilecodinchallengejmarouf.datasource.ItemDataSource;
+import com.example.jamal.mobilecodinchallengejmarouf.datasource.factory.ItemDataSourceFactory;
+import com.example.jamal.mobilecodinchallengejmarouf.model.Item;
 
 public class ItemViewModel extends ViewModel {
 
@@ -22,6 +26,10 @@ public class ItemViewModel extends ViewModel {
 
         itemPagedList = (new LivePagedListBuilder(itemDataSourceFactory, pagedListConfig))
                 .build();
+    }
+
+    public LiveData<PagedList<Item>> getItemPagedList() {
+        return itemPagedList;
     }
 }
 

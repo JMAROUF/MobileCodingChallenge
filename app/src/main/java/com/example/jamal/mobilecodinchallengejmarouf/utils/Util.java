@@ -1,4 +1,4 @@
-package com.example.jamal.mobilecodinchallengejmarouf;
+package com.example.jamal.mobilecodinchallengejmarouf.utils;
 
 import android.nfc.Tag;
 import android.util.Log;

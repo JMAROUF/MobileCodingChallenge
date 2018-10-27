@@ -1,4 +1,4 @@
-package com.example.jamal.mobilecodinchallengejmarouf;
+package com.example.jamal.mobilecodinchallengejmarouf.adapters;
 
 import android.arch.paging.PagedListAdapter;
 import android.content.Context;
@@ -13,12 +13,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.example.jamal.mobilecodinchallengejmarouf.R;
+import com.example.jamal.mobilecodinchallengejmarouf.model.Item;
 
 public class ItemAdapter extends PagedListAdapter<Item, ItemAdapter.ItemViewHolder> {
 
     private Context mCtx;
 
-    ItemAdapter(Context mCtx) {
+    public ItemAdapter(Context mCtx) {
         super(DIFF_CALLBACK);
         this.mCtx = mCtx;
     }
@@ -35,8 +37,8 @@ public class ItemAdapter extends PagedListAdapter<Item, ItemAdapter.ItemViewHold
         Item item = getItem(position);
 
         if (item != null) {
-            holder.repoName.setText(item.name);
-            holder.repoDesc.setText(item.description);
+            holder.repoName.setText(item.getName());
+            holder.repoDesc.setText(item.getDescription());
             holder.ownerName.setText(item.owner.login);
             if(item.stargazers_count>1000) {
                 holder.numberOfStars.setText(String.valueOf((Double.valueOf(item.stargazers_count )/ 1000)) + "K");
@@ -55,7 +57,7 @@ public class ItemAdapter extends PagedListAdapter<Item, ItemAdapter.ItemViewHold
             new DiffUtil.ItemCallback<Item>() {
                 @Override
                 public boolean areItemsTheSame(Item oldItem, Item newItem) {
-                    return oldItem.id == newItem.id;
+                    return oldItem.getId() == newItem.getId();
                 }
 
                 @Override
