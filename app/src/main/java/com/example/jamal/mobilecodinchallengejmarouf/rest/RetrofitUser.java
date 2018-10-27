@@ -1,4 +1,4 @@
-package com.example.jamal.mobilecodinchallengejmarouf;
+package com.example.jamal.mobilecodinchallengejmarouf.rest;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

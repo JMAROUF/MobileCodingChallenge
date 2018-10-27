@@ -1,7 +1,12 @@
-package com.example.jamal.mobilecodinchallengejmarouf;
+package com.example.jamal.mobilecodinchallengejmarouf.datasource;
 
 import android.arch.paging.PageKeyedDataSource;
 import android.support.annotation.NonNull;
+
+import com.example.jamal.mobilecodinchallengejmarouf.utils.Util;
+import com.example.jamal.mobilecodinchallengejmarouf.model.GithubApiResponse;
+import com.example.jamal.mobilecodinchallengejmarouf.model.Item;
+import com.example.jamal.mobilecodinchallengejmarouf.rest.RetrofitUser;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -12,7 +17,7 @@ public class ItemDataSource extends PageKeyedDataSource<Integer, Item> {
     private static final String SORT = "stars";
     private static final int FIRST_PAGE = 0;
     private static final String ORDER = "desc";
-    private static final String QUERY = "created:>"+Util.getTargetDate();
+    private static final String QUERY = "created:>"+ Util.getTargetDate();
     public  static final int PAGE_SIZE=100;
 
     @Override

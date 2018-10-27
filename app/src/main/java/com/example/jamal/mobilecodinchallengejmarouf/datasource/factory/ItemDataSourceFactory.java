@@ -1,8 +1,11 @@
-package com.example.jamal.mobilecodinchallengejmarouf;
+package com.example.jamal.mobilecodinchallengejmarouf.datasource.factory;
 
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.paging.DataSource;
 import android.arch.paging.PageKeyedDataSource;
+
+import com.example.jamal.mobilecodinchallengejmarouf.datasource.ItemDataSource;
+import com.example.jamal.mobilecodinchallengejmarouf.model.Item;
 
 public class ItemDataSourceFactory extends DataSource.Factory {
 

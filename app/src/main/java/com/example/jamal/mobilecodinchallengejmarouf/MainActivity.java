@@ -9,6 +9,10 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.example.jamal.mobilecodinchallengejmarouf.adapters.ItemAdapter;
+import com.example.jamal.mobilecodinchallengejmarouf.model.Item;
+import com.example.jamal.mobilecodinchallengejmarouf.viewmodel.ItemViewModel;
+
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
@@ -26,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         final ItemAdapter adapter = new ItemAdapter(this);
 
-        itemViewModel.itemPagedList.observe(this, new Observer<PagedList<Item>>() {
+        itemViewModel.getItemPagedList().observe(this, new Observer<PagedList<Item>>() {
             @Override
             public void onChanged(@Nullable PagedList<Item> items) {
                 adapter.submitList(items);
