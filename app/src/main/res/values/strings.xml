@@ -3,5 +3,6 @@
     <string name="repoName">repo name</string>
     <string name="nStars">number of stars desc</string>
     <string name="ownerName">owner Name</string>
+    <string name="repoDesc">owner Name</string>
 
 </resources>

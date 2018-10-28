@@ -13,6 +13,7 @@ import com.example.jamal.mobilecodinchallengejmarouf.adapters.ItemAdapter;
 import com.example.jamal.mobilecodinchallengejmarouf.model.Item;
 import com.example.jamal.mobilecodinchallengejmarouf.viewmodel.ItemViewModel;
 
+
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
